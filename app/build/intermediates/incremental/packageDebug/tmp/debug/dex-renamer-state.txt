@@ -1,0 +1,4 @@
+#Mon Sep 30 00:05:22 EEST 2019
+base.0=D\:\\Projects\\AndroidProjects\\PhotoGallery\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\out\\classes.dex
+path.0=classes.dex
+renamed.0=classes.dex

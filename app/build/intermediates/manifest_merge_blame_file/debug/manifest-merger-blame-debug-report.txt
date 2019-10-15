@@ -1,0 +1,99 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.incorcadit16.photogallery"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="19"
+8-->D:\Projects\AndroidProjects\PhotoGallery\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="27" />
+9-->D:\Projects\AndroidProjects\PhotoGallery\app\src\main\AndroidManifest.xml
+10
+11    <permission
+11-->D:\Projects\AndroidProjects\PhotoGallery\app\src\main\AndroidManifest.xml:4:5-107
+12        android:name="com.incorcadit16.photogallery.PRIVATE"
+12-->D:\Projects\AndroidProjects\PhotoGallery\app\src\main\AndroidManifest.xml:4:17-69
+13        android:protectionLevel="signature" />
+13-->D:\Projects\AndroidProjects\PhotoGallery\app\src\main\AndroidManifest.xml:4:70-105
+14
+15    <uses-permission android:name="android.permission.INTERNET" />
+15-->D:\Projects\AndroidProjects\PhotoGallery\app\src\main\AndroidManifest.xml:6:5-66
+15-->D:\Projects\AndroidProjects\PhotoGallery\app\src\main\AndroidManifest.xml:6:22-64
+16    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+16-->D:\Projects\AndroidProjects\PhotoGallery\app\src\main\AndroidManifest.xml:7:5-78
+16-->D:\Projects\AndroidProjects\PhotoGallery\app\src\main\AndroidManifest.xml:7:22-76
+17    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+17-->D:\Projects\AndroidProjects\PhotoGallery\app\src\main\AndroidManifest.xml:8:5-80
+17-->D:\Projects\AndroidProjects\PhotoGallery\app\src\main\AndroidManifest.xml:8:22-78
+18    <uses-permission android:name="com.incorcadit16.photogallery.PRIVATE" />
+18-->D:\Projects\AndroidProjects\PhotoGallery\app\src\main\AndroidManifest.xml:9:5-76
+18-->D:\Projects\AndroidProjects\PhotoGallery\app\src\main\AndroidManifest.xml:9:22-74
+19
+20    <application
+20-->D:\Projects\AndroidProjects\PhotoGallery\app\src\main\AndroidManifest.xml:11:5-39:19
+21        android:allowBackup="true"
+21-->D:\Projects\AndroidProjects\PhotoGallery\app\src\main\AndroidManifest.xml:12:9-35
+22        android:debuggable="true"
+23        android:icon="@mipmap/ic_launcher"
+23-->D:\Projects\AndroidProjects\PhotoGallery\app\src\main\AndroidManifest.xml:13:9-43
+24        android:label="@string/app_name"
+24-->D:\Projects\AndroidProjects\PhotoGallery\app\src\main\AndroidManifest.xml:14:9-41
+25        android:roundIcon="@mipmap/ic_launcher_round"
+25-->D:\Projects\AndroidProjects\PhotoGallery\app\src\main\AndroidManifest.xml:15:9-54
+26        android:supportsRtl="true"
+26-->D:\Projects\AndroidProjects\PhotoGallery\app\src\main\AndroidManifest.xml:16:9-35
+27        android:theme="@style/AppTheme" >
+27-->D:\Projects\AndroidProjects\PhotoGallery\app\src\main\AndroidManifest.xml:17:9-40
+28        <activity android:name="com.incorcadit16.photogallery.PhotoGalleryActivity" >
+28-->D:\Projects\AndroidProjects\PhotoGallery\app\src\main\AndroidManifest.xml:18:9-24:20
+28-->D:\Projects\AndroidProjects\PhotoGallery\app\src\main\AndroidManifest.xml:18:19-55
+29            <intent-filter>
+29-->D:\Projects\AndroidProjects\PhotoGallery\app\src\main\AndroidManifest.xml:19:13-23:29
+30                <action android:name="android.intent.action.MAIN" />
+30-->D:\Projects\AndroidProjects\PhotoGallery\app\src\main\AndroidManifest.xml:20:17-69
+30-->D:\Projects\AndroidProjects\PhotoGallery\app\src\main\AndroidManifest.xml:20:25-66
+31
+32                <category android:name="android.intent.category.LAUNCHER" />
+32-->D:\Projects\AndroidProjects\PhotoGallery\app\src\main\AndroidManifest.xml:22:17-77
+32-->D:\Projects\AndroidProjects\PhotoGallery\app\src\main\AndroidManifest.xml:22:27-74
+33            </intent-filter>
+34        </activity>
+35        <activity
+35-->D:\Projects\AndroidProjects\PhotoGallery\app\src\main\AndroidManifest.xml:25:9-26:76
+36            android:name="com.incorcadit16.photogallery.PhotoPageActivity"
+36-->D:\Projects\AndroidProjects\PhotoGallery\app\src\main\AndroidManifest.xml:25:19-52
+37            android:configChanges="keyboardHidden|orientation|screenSize" />
+37-->D:\Projects\AndroidProjects\PhotoGallery\app\src\main\AndroidManifest.xml:26:13-74
+38
+39        <service android:name="com.incorcadit16.photogallery.PollService" />
+39-->D:\Projects\AndroidProjects\PhotoGallery\app\src\main\AndroidManifest.xml:27:9-47
+39-->D:\Projects\AndroidProjects\PhotoGallery\app\src\main\AndroidManifest.xml:27:18-45
+40
+41        <receiver android:name="com.incorcadit16.photogallery.StartupReceiver" >
+41-->D:\Projects\AndroidProjects\PhotoGallery\app\src\main\AndroidManifest.xml:28:9-32:20
+41-->D:\Projects\AndroidProjects\PhotoGallery\app\src\main\AndroidManifest.xml:28:19-50
+42            <intent-filter>
+42-->D:\Projects\AndroidProjects\PhotoGallery\app\src\main\AndroidManifest.xml:29:13-31:29
+43                <action android:name="android.intent.action.BOOT_COMPLETED" />
+43-->D:\Projects\AndroidProjects\PhotoGallery\app\src\main\AndroidManifest.xml:30:17-78
+43-->D:\Projects\AndroidProjects\PhotoGallery\app\src\main\AndroidManifest.xml:30:25-76
+44            </intent-filter>
+45        </receiver>
+46        <receiver
+46-->D:\Projects\AndroidProjects\PhotoGallery\app\src\main\AndroidManifest.xml:33:9-38:20
+47            android:name="com.incorcadit16.photogallery.NotificationReceiver"
+47-->D:\Projects\AndroidProjects\PhotoGallery\app\src\main\AndroidManifest.xml:33:19-55
+48            android:exported="false" >
+48-->D:\Projects\AndroidProjects\PhotoGallery\app\src\main\AndroidManifest.xml:34:13-37
+49            <intent-filter android:priority="-999" >
+49-->D:\Projects\AndroidProjects\PhotoGallery\app\src\main\AndroidManifest.xml:35:13-37:29
+49-->D:\Projects\AndroidProjects\PhotoGallery\app\src\main\AndroidManifest.xml:35:28-51
+50                <action android:name="com.incorcadit16.photogallery.SHOW_NOTIFICATION" />
+50-->D:\Projects\AndroidProjects\PhotoGallery\app\src\main\AndroidManifest.xml:36:17-89
+50-->D:\Projects\AndroidProjects\PhotoGallery\app\src\main\AndroidManifest.xml:36:25-87
+51            </intent-filter>
+52        </receiver>
+53    </application>
+54
+55</manifest>
